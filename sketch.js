@@ -11,7 +11,7 @@
 // Professor - Marco Heleno 
 
 
-var yoff = 0.0;        // 2nd dimension of perlin noise
+var yoff = 0.0;        
 var img;
 
 
@@ -19,7 +19,7 @@ function setup()
 {
   createCanvas(796, 1042, SVG);
   frameRate(1);
-  img = loadImage("lateral2.png");  // Carregar a imagem 
+  img = loadImage("eva1.png");  // Carregar a imagem 
 }
 
 function draw() {
@@ -48,8 +48,8 @@ function draw() {
   }
   // localização da imagem
   image(img, 0, 0);
-  lateral2.resize(500, 750);
-  image(lateral2, 0, 0);
+  eva1.resize(500, 750);
+  image(eva1, 0, 0);
 
   // Introdução de texto 
   textAlign(CENTER);
