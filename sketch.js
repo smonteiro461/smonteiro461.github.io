@@ -39,7 +39,7 @@ function draw()
   // localização da imagem
   image(img, 0, 0);
   lateral2.resize(500, 750);
-  image(lateral2, 0, 0)
+  image(lateral2, 0, 0);
 
   // Introdução de texto 
   textAlign(CENTER);
@@ -57,4 +57,3 @@ function draw()
       save("meuProjecto.svg");
     }
   }
-}
