@@ -22,8 +22,7 @@ function setup()
   img = loadImage("eva1.png");  // Carregar a imagem 
 }
 
-function draw() 
-{
+function draw() {
 
   background(255);
   noFill();
@@ -50,7 +49,7 @@ function draw()
   // localização da imagem
   image(img, 0, 0);
   eva1.resize(500, 750);
-  image(img, width/2, height/2, img.width/2, img.height/2);
+  image(eva1, 0, 0);
 
   // Introdução de texto 
   textAlign(CENTER);
@@ -58,9 +57,9 @@ function draw()
   textSize(80);
   text("3 & 4 de Junho");
   fill(0, 102, 153);
-}  
+  
   // SVG para prints
-  /*function keyPressed()
+  function keyPressed()
   {
     if (key === " ")
     {
@@ -68,4 +67,4 @@ function draw()
       save("meuProjecto.svg");
     }
   }
-} */
+}
