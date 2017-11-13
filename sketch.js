@@ -35,6 +35,26 @@ function draw()
     yoff += 0.03;
     endShape();
   }
+}  
   // localização da imagem
-  image(img, width/2, height/2, img.width/2, img.height/2);
+  image(img, 0, 0);
+  lateral2.resize(500, 750);
+  image(lateral2, 0, 0)
+
+  // Introdução de texto 
+  textAlign(CENTER);
+  textStyle('roboto');
+  textSize(80);
+  text("3 & 4 de Junho");
+  fill(0, 102, 153);
+  
+  // SVG para prints
+  function keyPressed()
+  {
+    if (key === " ")
+    {
+      noLoop();
+      save("meuProjecto.svg");
+    }
+  }
 }
